@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>α版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="u1">合宿費用申請フォーム</h1>
+    <div class="container">
+        <h2>合宿費用申請フォーム</h2>
+        <form action="https://script.google.com/macros/s/AKfycby2zq_RZFLkhGzCZmdBHetypQycM0DNPxWLH0IZZx6HxAZlmwEptXd0uiW1ioxWxBY/exec" method="POST">
+            <input type="hidden" name="formId" value="dataFormC">
+
+            <label for="date">月日:</label>
+            <input type="date"  name="date" autocomplete="off" required>
+            
+            <label for="name">氏名:</label>
+            <input type="text"  name="name" autocomplete="name" required>
+            
+            <label for="fuel">ガソリン代:</label>
+            <input type="number"  name="fuel" autocomplete="off" required>
+        
+            <label for="drink">飲料買い出し組の飲料費用etc(酒は除く):</label>
+            <input type="number"  name="drink" autocomplete="off" required>
+        
+            <label for="alcohol">飲料買い出し組のお酒費用:</label>
+            <input type="number"  name="alcohol" autocomplete="off" required>
+
+            <label for="food">食料買い出し組の食べ物etc:</label>
+            <input type="number"  name="food" autocomplete="off" required>
+        
+            <label for="afterPartyFood">その他:</label>
+            <input type="number"  name="other" autocomplete="off" required>
+            
+            <button type="submit">送信</button>
+        </form>
+    </div>
+
+</body>
+</html>
